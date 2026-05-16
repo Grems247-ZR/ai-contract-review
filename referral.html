@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI合同智审 - 免费使用</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,#667eea,#764ba2);min-height:100vh;color:#333}
+.c{max-width:700px;margin:0 auto;padding:20px;text-align:center}
+.hero{color:white;padding:60px 20px 40px}
+.hero h1{font-size:2.5em;margin-bottom:15px}
+.hero p{font-size:1.2em;opacity:0.95}
+.card{background:white;border-radius:20px;padding:30px;margin:20px auto;box-shadow:0 10px 40px rgba(0,0,0,0.15)}
+.card h2{color:#4a4a8a;margin-bottom:15px}
+.price{font-size:3em;color:#22c55e;font-weight:bold}
+.btn{display:inline-block;padding:16px 40px;border-radius:50px;font-size:1.2em;font-weight:bold;text-decoration:none;cursor:pointer;border:none;margin:10px}
+.btn-primary{background:#667eea;color:white}
+.btn-success{background:#22c55e;color:white}
+.share-box{background:#f0f9ff;border:2px solid #667eea;border-radius:12px;padding:20px;margin:20px 0}
+.share-box input{width:100%;padding:12px;border:1px solid #ddd;border-radius:8px;margin:10px 0;font-size:1em}
+.counter{font-size:1.2em;color:#667eea;font-weight:bold}
+ul{text-align:left;list-style:none;max-width:400px;margin:20px auto}
+ul li{padding:10px 0;border-bottom:1px solid #eee}
+ul li:before{content:"✅ ";color:#22c55e}
+</style>
+</head>
+<body>
+<div class="c">
+<div class="hero">
+<h1>📋 AI合同智能审查</h1>
+<p>上传合同，30秒生成专业法务报告</p>
+</div>
+
+<div class="card">
+<h2>🎁 限时免费领取终身会员</h2>
+<p style="font-size:1.1em;margin:15px 0">分享给你的朋友，换取终身会员资格</p>
+<div class="counter" id="counter">已领取: 0/100</div>
+
+<div class="share-box">
+<h3>📤 复制分享链接</h3>
+<input type="text" id="shareLink" readonly>
+<button class="btn btn-primary" onclick="copyLink()">📋 复制链接</button>
+<p style="color:#666;font-size:.85em;margin-top:8px">分享到朋友圈/微信群/QQ群</p>
+</div>
+
+<p style="color:#666;margin-top:20px">不想分享？<a href="https://affix-ignore-alive.ngrok-free.dev" style="color:#667eea">直接购买 ¥99 终身会员</a></p>
+</div>
+
+<div class="card">
+<h2>✨ 功能亮点</h2>
+<ul>
+<li>30秒AI深度分析合同条款</li>
+<li>风险等级分类 + 修改建议</li>
+<li>支持劳动/租赁/销售/服务合同</li>
+<li>DeepSeek大模型驱动</li>
+<li>终身会员无限次使用</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>💰 赚推广佣金</h2>
+<p>每推荐一位付费用户，获得 <strong>¥30 佣金</strong></p>
+<p style="color:#666;font-size:.85em;margin-top:10px">推荐100人 = ¥3,000 收入</p>
+<a href="https://affix-ignore-alive.ngrok-free.dev" class="btn btn-success">立即注册开始推广 →</a>
+</div>
+
+</div>
+<script>
+const refLink = 'https://affix-ignore-alive.ngrok-free.dev';
+document.getElementById('shareLink').value = refLink + '\n\nAI合同审查神器！30秒出报告，每日免费3次。点击试试👇';
+function copyLink(){
+  const input = document.getElementById('shareLink');
+  input.select();
+  document.execCommand('copy');
+  alert('已复制！去朋友圈/微信群粘贴分享~');
+}
+</script>
+</body>
+</html>
